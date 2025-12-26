@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/Graphik\ Arabic\ Black.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.font-tehran {
+    font-family: 'graphik', sans-serif;
+}
+
+.option {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #dddddd;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+}
+
+.selected {
+    background: #dedcdc97;
+    border-color: #aaa;
+}
+
+.correct {
+    background: #2ecc71 !important;
+    color: #fff;
+    border-color: #2ecc71 !important;
+}
+
+
+.wrong {
+    background: #e74c3c !important;
+    color: #fff;
+    border-color: #e74c3c !important;
+}
+
+
+.hidden{
+   display: none;
+}
+

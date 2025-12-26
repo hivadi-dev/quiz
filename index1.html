@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="w-full min-h-screen flex flex-col justify-center items-center font-graphik"
+    style="background: linear-gradient(135deg, #ff7f50, #1e3c72);">
+    <div id="quiz-box"
+        class=" w-[80%] md:w-[70%] p-6 rounded-2xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-2xl text-white flex flex-col gap-4">
+        <div class="container flex justify-between items-center px-5">
+            <h1 id="question" class="text-[18px] md:text-[20px] font-bold leading-relaxed"></h1>
+            <div id="counter" class="opacity-80">(1/40)</div>
+        </div>
+        <div id="options" class="flex flex-col gap-3 mt-2"></div>
+        <div class="flex gap-3 mt-4 justify-center">
+            <button id="checkbtn"
+                class="checkbtn w-37  py-2 rounded-xl bg-orange-500/90 hover:bg-orange-600 transition font-medium hover:scale-95 duration-500"
+                onclick="checkAnswer()">چک</button>
+            <button id="nextbtn"
+                class=" nextbtn w-37  py-2 rounded-xl bg-sky-500/80 hover:bg-sky-500 transition font-medium hidden hover:scale-95 duration-500"
+                onclick="nextQuestion()">بعدی</button>
+        </div>
+        <div id="score" class="score opacity-90 text-center text-sm mt-2"></div>
+    </div>
+
+    <div id="backdrop" class="hidden fixed inset-0 bg-[#03030351] backdrop-blur-sm z-40"></div>
+    <div id="message"
+        class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 max-w-sm  bg-orange-500/90 text-white font-bold p-6 rounded-2xl shadow-xl text-center  items-center">
+    </div>
+    <div class="footer w-full h-16 bg-amber-50 fixed bottom-0 left-0 flex justify-center items-center gap-10"
+        style="background: linear-gradient(to top, #FF7208, transparent);">
+        <div class="text-white text-start mt-3 gap-5 ">
+            <a class="" href="https://github.com/hivadi-dev" target="_blank"><i
+                    class="ri-github-fill text-white text-[20px] hover:text-[#85a6f3] "></i></a>
+            <a class="" href="https://instagram.com/hivadi.dev/" target="_blank"><i
+                    class="ri-instagram-fill text-white text-[20px] hover:text-[#85a6f3] "></i></a>
+            <a class="" href="https://linkedin.com/in/hivadi.dev/" target="_blank"><i
+                    class="ri-linkedin-box-fill text-white text-[20px] hover:text-[#85a6f3] "></i></a>
+        </div>
+        <p class="text-white text-center mt-3 text-[14px]">طراحی توسط هیوا درگزنی | 1404</p>
+    </div>
+
+
+</body>
+<script src="script1.js"></script>
+
+</html>
